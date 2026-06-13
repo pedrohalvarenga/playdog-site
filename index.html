@@ -361,6 +361,24 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--laranja);outline-of
 .gal-item img{width:100%;height:100%;object-fit:cover;display:block}
 .tb-photo img{width:100%;height:100%;min-height:240px;object-fit:cover;display:block}
 .map-card iframe{display:block}
+/* ===================== AVALIAÇÕES GOOGLE ===================== */
+.reviews{background:
+  radial-gradient(120% 100% at 0% 0%, var(--turquesa-fundo) 0%, transparent 55%),
+  radial-gradient(110% 90% at 100% 100%, var(--roxo-claro) 0%, transparent 55%),
+  var(--creme)}
+.review-band{display:grid;grid-template-columns:.85fr 1.15fr;gap:0;background:#fff;border-radius:var(--raio);box-shadow:var(--sombra-forte);overflow:hidden;margin-top:42px}
+.rb-score{background:linear-gradient(140deg,var(--roxo) 0%,var(--roxo-escuro) 100%);color:#fff;padding:46px 30px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.rb-num{font-family:'Fredoka';font-weight:700;font-size:5rem;line-height:1}
+.rb-stars{color:#FFC400;font-size:1.9rem;letter-spacing:4px;margin-top:2px}
+.rb-on{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.96rem;color:#EAD3F7;margin-top:12px}
+.rb-on svg{background:#fff;border-radius:50%;padding:3px}
+.rb-text{padding:42px 40px;display:flex;flex-direction:column;gap:13px;justify-content:center}
+.rb-text h3{font-size:1.7rem;color:var(--tinta)}
+.rb-text p{color:var(--tinta-suave);font-size:1.06rem}
+.rb-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:2px}
+.rb-chip{display:inline-flex;align-items:center;gap:7px;background:var(--turquesa-fundo);color:var(--turquesa-tinta);font-weight:700;font-size:.84rem;padding:7px 14px;border-radius:999px}
+.rb-text .btn{align-self:flex-start;margin-top:8px}
+@media(max-width:760px){.review-band{grid-template-columns:1fr}.rb-text{text-align:center;align-items:center}.rb-text .btn{align-self:center}}
 </style>
 </head>
 <body>
@@ -375,6 +393,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--laranja);outline-of
       <a href="#servicos">Serviços</a>
       <a href="#amor">Sobre nós</a>
       <a href="#galeria">Galeria</a>
+      <a href="#avaliacoes">Avaliações</a>
       <a href="#valores">Valores &amp; regras</a>
       <a href="#contato">Contato</a>
     </nav>
@@ -536,6 +555,37 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--laranja);outline-of
         <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.9.07s-3.63 0-4.9-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s0-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.2 8.8 2.2 12 2.2zm0 1.62c-3.14 0-3.5.01-4.74.07-.95.04-1.46.2-1.8.34-.45.17-.78.38-1.12.72-.34.34-.55.67-.72 1.12-.13.34-.3.85-.34 1.8-.06 1.24-.07 1.6-.07 4.74s.01 3.5.07 4.74c.04.95.2 1.46.34 1.8.17.45.38.78.72 1.12.34.34.67.55 1.12.72.34.13.85.3 1.8.34 1.24.06 1.6.07 4.74.07s3.5-.01 4.74-.07c.95-.04 1.46-.2 1.8-.34.45-.17.78-.38 1.12-.72.34-.34.55-.67.72-1.12.13-.34.3-.85.34-1.8.06-1.24.07-1.6.07-4.74s-.01-3.5-.07-4.74c-.04-.95-.2-1.46-.34-1.8a3.02 3.02 0 0 0-.72-1.12 3.02 3.02 0 0 0-1.12-.72c-.34-.13-.85-.3-1.8-.34-1.24-.06-1.6-.07-4.74-.07zm0 2.76a5.42 5.42 0 1 1 0 10.84 5.42 5.42 0 0 1 0-10.84zm0 1.62a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6zm5.6-2.9a1.27 1.27 0 1 1 0 2.54 1.27 1.27 0 0 1 0-2.54z"/></svg>
         Seguir no Instagram
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AVALIAÇÕES GOOGLE ============ -->
+<section class="section reviews" id="avaliacoes">
+  <div class="wrap center">
+    <span class="eyebrow laranja">⭐ Quem confia, recomenda</span>
+    <h2 class="title">Nota máxima no Google 🌟</h2>
+    <p class="lead">As famílias de Juiz de Fora avaliaram a Play Dog com a nota mais alta que existe. Esse carinho todo é o nosso maior orgulho!</p>
+  </div>
+  <div class="wrap">
+    <div class="review-band">
+      <div class="rb-score">
+        <div class="rb-num">5,0</div>
+        <div class="rb-stars">★★★★★</div>
+        <div class="rb-on">
+          <svg viewBox="0 0 48 48" width="24" height="24"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+          Avaliação no Google
+        </div>
+      </div>
+      <div class="rb-text">
+        <h3>Tutores apaixonados, dogs felizes 🐾</h3>
+        <p>Cada estrelinha é de uma família que confiou o seu melhor amigo pra gente — e voltou pra contar. Vem ver o que estão falando sobre a Play Dog!</p>
+        <div class="rb-chips">
+          <span class="rb-chip">💜 Atendimento nota 10</span>
+          <span class="rb-chip">🐾 Cães bem cuidados</span>
+          <span class="rb-chip">😍 Tutores recomendam</span>
+        </div>
+        <a class="btn btn-roxo btn-lg" href="https://share.google/9OffLM1AnfV3J0Pu3" target="_blank" rel="noopener">Ver avaliações no Google →</a>
+      </div>
     </div>
   </div>
 </section>
