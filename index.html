@@ -378,7 +378,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--laranja);outline-of
 .rb-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:2px}
 .rb-chip{display:inline-flex;align-items:center;gap:7px;background:var(--turquesa-fundo);color:var(--turquesa-tinta);font-weight:700;font-size:.84rem;padding:7px 14px;border-radius:999px}
 .rb-text .btn{align-self:flex-start;margin-top:8px}
-@media(max-width:760px){.review-band{grid-template-columns:1fr}.rb-text{text-align:center;align-items:center}.rb-text .btn{align-self:center}}
+.review-band>div,.transporte-band>div{min-width:0}
+@media(max-width:760px){.review-band{grid-template-columns:1fr}.rb-score{padding:38px 22px}.rb-text{text-align:center;align-items:center;padding:30px 22px}.rb-text .btn{align-self:center}.review-band .btn,.transporte-band .btn{white-space:normal;text-align:center}.transporte-band .tb-text{padding:32px 24px}}
 </style>
 </head>
 <body>
