@@ -464,6 +464,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--laranja);outline-of
 .logo-img.lg{width:56px;height:47px}
 .foot-logo-wrap{margin-bottom:14px}
 /* ===== fotos reais preenchendo os cards ===== */
+picture{display:contents}
 .photo-card img{width:100%;height:100%;object-fit:cover;display:block}
 .gal-item{background:#fff}
 .gal-item img{width:100%;height:100%;object-fit:cover;display:block}
@@ -569,7 +570,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--laranja);outline-of
     </div>
     <div class="hero-photo">
       <div class="photo-card">
-        <img src="assets/hero-correndo.jpg" alt="Cachorro correndo feliz no gramado da Play Dog" width="975" height="1300" fetchpriority="high" decoding="async">
+        <picture><source type="image/avif" srcset="assets/hero-correndo.avif"><source type="image/webp" srcset="assets/hero-correndo.webp"><img src="assets/hero-correndo.jpg" alt="Cachorro correndo feliz no gramado da Play Dog" width="975" height="1300" fetchpriority="high" decoding="async"></picture>
       </div>
       <div class="float-badge fb-1"><span class="fb-emoji">💜</span><div>Amor<small>cuidado de verdade</small></div></div>
       <div class="float-badge fb-2"><span class="fb-emoji">🐾</span><div>2025<small>nascemos com amor</small></div></div>
@@ -662,7 +663,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--laranja);outline-of
       </div>
     </div>
     <div class="photo-card" style="aspect-ratio:4/4.2">
-      <img src="assets/galeria-turma.jpg" alt="Turma de cachorros felizes na creche Play Dog" width="825" height="1100">
+      <picture><source type="image/avif" srcset="assets/galeria-turma.avif"><source type="image/webp" srcset="assets/galeria-turma.webp"><img src="assets/galeria-turma.jpg" alt="Turma de cachorros felizes na creche Play Dog" width="825" height="1100"></picture>
     </div>
   </div>
 </section>
@@ -676,14 +677,14 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--laranja);outline-of
   </div>
   <div class="wrap">
     <div class="gal-grid">
-      <div class="gal-item tall"><img src="assets/creche-piscina.jpg" alt="Cães se divertindo na piscininha da Play Dog" loading="lazy"></div>
-      <div class="gal-item"><img src="assets/galeria-lulus.jpg" alt="Lulus da Pomerânia na creche Play Dog" loading="lazy"></div>
-      <div class="gal-item"><img src="assets/creche-mural.jpg" alt="Cãozinho no espaço com mural de praia" loading="lazy"></div>
-      <div class="gal-item"><img src="assets/hotel-sofa.jpg" alt="Cães descansando no sofá da Play Dog" loading="lazy"></div>
-      <div class="gal-item"><img src="assets/hotel-caminha.jpg" alt="Cão descansando na caminha do hotelzinho" loading="lazy"></div>
-      <div class="gal-item tall"><img src="assets/banho.jpg" alt="Cãozinho tomando banho na Play Dog" loading="lazy"></div>
-      <div class="gal-item"><img src="assets/galeria-turma.jpg" alt="Turma de cães posando felizes na Play Dog" loading="lazy"></div>
-      <div class="gal-item"><img src="assets/hero-correndo.jpg" alt="Cachorro correndo feliz no gramado da Play Dog" loading="lazy"></div>
+      <div class="gal-item tall"><picture><source type="image/avif" srcset="assets/creche-piscina.avif"><source type="image/webp" srcset="assets/creche-piscina.webp"><img src="assets/creche-piscina.jpg" alt="Cães se divertindo na piscininha da Play Dog" loading="lazy"></picture></div>
+      <div class="gal-item"><picture><source type="image/avif" srcset="assets/galeria-lulus.avif"><source type="image/webp" srcset="assets/galeria-lulus.webp"><img src="assets/galeria-lulus.jpg" alt="Lulus da Pomerânia na creche Play Dog" loading="lazy"></picture></div>
+      <div class="gal-item"><picture><source type="image/avif" srcset="assets/creche-mural.avif"><source type="image/webp" srcset="assets/creche-mural.webp"><img src="assets/creche-mural.jpg" alt="Cãozinho no espaço com mural de praia" loading="lazy"></picture></div>
+      <div class="gal-item"><picture><source type="image/avif" srcset="assets/hotel-sofa.avif"><source type="image/webp" srcset="assets/hotel-sofa.webp"><img src="assets/hotel-sofa.jpg" alt="Cães descansando no sofá da Play Dog" loading="lazy"></picture></div>
+      <div class="gal-item"><picture><source type="image/avif" srcset="assets/hotel-caminha.avif"><source type="image/webp" srcset="assets/hotel-caminha.webp"><img src="assets/hotel-caminha.jpg" alt="Cão descansando na caminha do hotelzinho" loading="lazy"></picture></div>
+      <div class="gal-item tall"><picture><source type="image/avif" srcset="assets/banho.avif"><source type="image/webp" srcset="assets/banho.webp"><img src="assets/banho.jpg" alt="Cãozinho tomando banho na Play Dog" loading="lazy"></picture></div>
+      <div class="gal-item"><picture><source type="image/avif" srcset="assets/galeria-turma.avif"><source type="image/webp" srcset="assets/galeria-turma.webp"><img src="assets/galeria-turma.jpg" alt="Turma de cães posando felizes na Play Dog" loading="lazy"></picture></div>
+      <div class="gal-item"><picture><source type="image/avif" srcset="assets/hero-correndo.avif"><source type="image/webp" srcset="assets/hero-correndo.webp"><img src="assets/hero-correndo.jpg" alt="Cachorro correndo feliz no gramado da Play Dog" loading="lazy"></picture></div>
     </div>
     <div class="gal-cta">
       <p class="lead center">Tem muito mais no nosso Instagram — é onde a brincadeira acontece todo dia!</p>
@@ -767,7 +768,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--laranja);outline-of
         <a href="https://wa.me/5532991651894?text=Oi!%20Quero%20um%20or%C3%A7amento%20do%20leva-e-traz%20da%20Play%20Dog." target="_blank" rel="noopener" class="btn btn-turq btn-lg">Pedir orçamento no WhatsApp</a>
       </div>
       <div class="tb-photo">
-        <img src="assets/creche-mural.jpg" alt="Cãozinho feliz na Play Dog">
+        <picture><source type="image/avif" srcset="assets/creche-mural.avif"><source type="image/webp" srcset="assets/creche-mural.webp"><img src="assets/creche-mural.jpg" alt="Cãozinho feliz na Play Dog"></picture>
       </div>
     </div>
   </div>
