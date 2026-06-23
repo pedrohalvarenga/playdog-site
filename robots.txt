@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://playdogjf.com.br/sitemap.xml
