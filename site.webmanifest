@@ -1,7 +1,7 @@
 {
-  "name": "Play Dog | Creche Canina",
+  "name": "Play Dog",
   "short_name": "Play Dog",
-  "description": "Creche, hotel, banho & tosa, atendimento veterinário e leva-e-traz para cães em Juiz de Fora.",
+  "description": "Creche para cachorro em Juiz de Fora, com hotel, banho e tosa e leva-e-traz.",
   "lang": "pt-BR",
   "start_url": "/",
   "display": "standalone",
